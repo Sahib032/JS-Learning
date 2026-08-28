@@ -126,19 +126,49 @@
 
 //----------Object Merging & Defaults---------------
 //Write a function createSettings(userOptions) that merges default app settings with custom user options.
-const defaultSettings ={
-    theme:"Light",
-    Notification:true,
-    fontsize:"medium",
-    autoSave: false
+// const defaultSettings ={
+//     theme:"Light",
+//     Notification:true,
+//     fontsize:"medium",
+//     autoSave: false
+// };
+// function createSettings(userOptions = {}){
+//     return {...defaultSettings, ...userOptions};
+// }
+
+// console.log(createSettings(userOptions));
+
+const defaultOrder = {
+  item: "Wireless Headphones",
+  price: 100,
+  shipping: 10,
+  tax: 5,
+  couponCode: null
 };
-function createSettings(userOptions = {}){
-    return {...defaultSettings, ...userOptions};
+// console.log(applyPromo(defaultOrder));
+
+const appliedPromo = {
+  shipping: 0,       // Free shipping promo!
+  couponCode: "FREESHIP"
+};
+// function applyPromo(order, promo) {
+//   return { ...order, ...promo };
+// }
+
+// console.log(applyPromo(defaultOrder, appliedPromo));
+function buyProduct(order,promo){
+    //   return order;
+    if(promo&&promo.couponCode ==="FREESHIP"){
+        const updated = { ...order,...promo};
+        //  console.log(updated);
+        return updated;
+       
+    }
+        return order;
 }
 
-console.log(createSettings(userOptions));
-
-
+console.log(buyProduct(defaultOrder,appliedPromo));
+console.log(buyProduct(defaultOrder));
 
 
 

@@ -22,16 +22,26 @@
 // console.log(student)
 
 //----------Part 17--------
-name = "Namita"
+// name = "Namita"
 
-function greet(){
-  console.log(`Hello! My name is ${this.name}`)
-}
-greet()
+// function greet(){
+//   console.log(`Hello! My name is ${this.name}`)
+// }
+// greet()
 
+//-------Part 17-------
+const user = {
+    name: "Rahul",
+    age: 25,
+    city: "Delhi",
+    isLoggedIn: true
+};
 
-
-
+console.log("keys of obj",Object.keys(user))
+console.log("Values of obj",Object.values(user))
+console.log("key-value pair of obj",Object.entries(user))
+console.log("to check email exists or not",user.hasOwnProperty("email"))
+console.log("to check name exists or not",user.hasOwnProperty("name"))
 
 
 

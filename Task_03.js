@@ -44,6 +44,8 @@ console.log(calculateCartPrice(10,20,30,40,50))
  console.log(details)
 // password aur token alg karke bacha-kucha sab details mai pack ho gya hai
 
+//----=== Part 21===----
+// Scope Prediction
 
 
 

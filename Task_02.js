@@ -76,18 +76,104 @@
 
 //-------Part 19--------
 // JSON Understanding
- const response ={
-  success:true,
-  data:{
-    username:"xyz",
-    skills:["Java","Python","React"]
-  }
- }
- // {success,data:{username,skills}} , success,data are keys of response,but data itself an object and 
- // their keys are username and skills, so that's a way to defined destructor of nested object
-const {success,data:{username,skills}}=response
-console.log(username)
-console.log(skills)
+//  const response ={
+//   success:true,
+//   data:{
+//     username:"xyz",
+//     skills:["Java","Python","React"]
+//   }
+//  }
+//  // {success,data:{username,skills}} , success,data are keys of response,but data itself an object and 
+//  // their keys are username and skills, so that's a way to defined destructor of nested object
+// const {success,data:{username,skills}}=response
+// console.log(username)
+// console.log(skills)
+
+//-------Part 20--------
+
+// function calC(x, y, op){
+//   // const op = ['+','-','*','/','%'];
+//   switch(op) {
+//     case "+": 
+//       console.log(x + y);
+//       break;
+//     case "-": 
+//       console.log(x - y);
+//       break;
+//     case "*": 
+//       console.log(x * y);
+//       break;
+//     case "/": 
+//       if(y==0){
+//         console.log("y = 0 not permissible")
+//       }else{
+//           console.log(x / y);
+//       break;
+//       }
+//     case "%":
+//       if(y==0){
+//         console.log("y = 0 not permissible")
+//       }else{
+//           console.log(x % y);
+//       break;
+//       }
+      
+//     default:
+//       console.log("Invalid operator");
+//       break;
+//   }
+// }
+
+// calC(8,7,"+");
+// calC(8,7,"-");
+// calC(8,7,"*");
+// calC(8,7,"/");
+// calC(8,7,"%");
+
+
+// Login Function
+
+// const login = (username, password) => {
+//   if (username === "xyz" && password === 123) {
+//     console.log("User Identified");
+//     console.log("accessed successfully");
+//     console.log("Logged In");
+//   } else {
+//     console.log("access denied!!");
+//     console.log("Try again!!");
+//   }
+// };
+
+// login('xyz',853)
+// const login = (username, password) => {
+//   return username === "xyz" && password === 123 
+ 
+// };
+
+
+// const auth = login('xyz',853)
+
+// if(auth){
+//   console.log("Logged In successfull")
+// }else{
+//   console.log("Login denied")
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

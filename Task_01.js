@@ -225,16 +225,16 @@
 // console.log("Using spread operator:",...forntend,...backend)
 
 // Nested Array
-let data =[
-    1,
-    2,
-    [3,4],
-    [5,[6,7]],
-    8,9
-];
-flatten = data.flat(Infinity)//.flat(Infinity) flatten mutliple level
-console.log(data)
-console.log(flatten)
+// let data =[
+//     1,
+//     2,
+//     [3,4],
+//     [5,[6,7]],
+//     8,9
+// ];
+// flatten = data.flat(Infinity)//.flat(Infinity) flatten mutliple level
+// console.log(data)
+// console.log(flatten)
 
 
 

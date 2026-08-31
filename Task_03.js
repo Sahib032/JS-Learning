@@ -22,30 +22,91 @@
 //  }
 //  upscCourse.forEach(course => addCard(course))
 
-function calculateCartPrice(...rest){
-   return rest.reduce((sum,curr) => sum+curr,0)
-}
-//rest.reduce((sum,curr) rest operator(...) alag alag bhikhre hue no ko ek array bana kr usme dalta hai aur reduce us array ko sum kr deta hai
-console.log(calculateCartPrice(10,20,30,40,50))
-//.reduce() works only on arrays not on comma separated number par
-//...rest opertor works on comma-separated numbers
+// function calculateCartPrice(...rest){
+//    return rest.reduce((sum,curr) => sum+curr,0)
+// }
+// //rest.reduce((sum,curr) rest operator(...) alag alag bhikhre hue no ko ek array bana kr usme dalta hai aur reduce us array ko sum kr deta hai
+// console.log(calculateCartPrice(10,20,30,40,50))
+// //.reduce() works only on arrays not on comma separated number par
+// //...rest opertor works on comma-separated numbers
 
-//(...) rest operator ka real world example user ka password or secret information ko chod kar
-// baki cheezo ko public krne mai kia jata hai
- const profile={
-    name:"abx",
-    designation:"clerk",
-    eamil:"clerk@gmail.com",
-    password:"54646",
-    token:"leletoken"
- }
+// //(...) rest operator ka real world example user ka password or secret information ko chod kar
+// // baki cheezo ko public krne mai kia jata hai
+//  const profile={
+//     name:"abx",
+//     designation:"clerk",
+//     eamil:"clerk@gmail.com",
+//     password:"54646",
+//     token:"leletoken"
+//  }
 
- const{password,token,...details} = profile
- console.log(details)
-// password aur token alg karke bacha-kucha sab details mai pack ho gya hai
+//  const{password,token,...details} = profile
+//  console.log(details)
+// // password aur token alg karke bacha-kucha sab details mai pack ho gya hai
 
 //----=== Part 21===----
 // Scope Prediction
+//Hoisting --> Memory creation Pehle poore code ko scan krta haiaur variable aur functions ke liye memory allot krta hai
+// execution phase --> code ko line by line execute karta hai
+
+//TDZ ( Temporal Dead Zone) discussed later!!!
+
+//------part 21------
+// Version 1: (Arrow function)Explicit return
+// const add1 =(a,b)=> {return a+b}
+// console.log("const add1 =(a,b)=> {return a+b} :",add1(3,4))
+// // Version 2: (Arrow function)Implicit return
+// const add2 =(a,b)=> a+b
+// console.log("const add2 =(a,b)=> a+b :",add2(3,4))
+
+
+//------IIFE stands for Immediately Invoked Function Expression--------
+/* 1- Used primarily to create an isolated,private scope.
+2- Execute code immediately without leaving unwanted variables behind in the global namespace
+3- Global Scope Pollution -> variables: var,let and const or functions declared in global
+   scope are known as global scope pollution when variables overwrites (like: var) and 
+   (other:let,const, they don't overwrite but crash with SyntaxError!) 
+4-IIFE's prevent (everything inside this parenthesis)(); so that it won't let overwrite and 
+  prevents Global Pollution
+5-Real-World use cases for IIFEs -->
+  -> Running setup tasks that should only happen once upon page/app load without
+     exposing connection parameter.
+  -> Before modern ES6 modules(impot/export),IIFEs were the standard design pattern to implement encapsulation
+6-Always put a semicolon ; before IIFE if it follows other code.
+7-Browser bookmarklets and injected scripts.  
+
+*/
+ 
+// (function(){console.log("Application Started")})();
+// const username ="Mohd Sahib"
+// ;console.log((function(){return`Welcome ${username}`})());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

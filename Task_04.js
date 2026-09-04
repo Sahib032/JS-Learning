@@ -160,18 +160,55 @@
 // console.log(`Day Index: ${dayIndex}`);
 // console.log(`Today is ${day[dayIndex]}`);
 
-
-
-
-
-
-
-
-
-
-
-
-
+//-----Part 24----- 
+// Truthy and Falsy Values
+// 0 -> Falsy :-(Won't be entered in if condition)
+// 1 -> Truthy :-(Will be entered in if condition)
+// false -> Falsy :-(Won't be entered in if condition)
+// true -> Truthy :-(Will be entered in if condition)
+// "" -> Falsy :-(Won't be entered in if condition)
+// "hello" -> Truthy :-(Will be entered in if condition)
+// null -> Falsy :-(Won't be entered in if condition)
+// undefined -> Falsy :-(Won't be entered in if condition)
+// NaN -> Falsy :-(Won't be entered in if condition)
+// [] -> Truthy :-(Will be entered in if condition)[ is an empty array but still considered truthy in JavaScript]
+// {} -> Truthy :-(Will be entered in if condition){is an empty object but still considered truthy in JavaScript}
+// console.log("Truthy and Falsy Values in JavaScript:");
+// console.log("0 is", Boolean(0)); // false
+// console.log("1 is", Boolean(1));
+// if(0) {
+//     console.log("This is truthy");
+// }
+// if(1) {
+//     console.log("This is truthy");
+// }
+// if(false) {
+//     console.log("This is truthy");
+// }
+// if(true) {
+//     console.log("This is truthy");
+// }
+// if("") {
+//     console.log("This is truthy");
+// }
+// if("hello") {
+//     console.log("This is truthy");
+// }
+// if(null) {
+//     console.log("This is truthy");
+// }
+// if(undefined) {
+//     console.log("This is truthy");
+// }
+// if(NaN) {
+//     console.log("This is truthy");
+// }
+// if([]) {
+//     console.log("This is truthy");
+// }
+// if({}) {
+//     console.log("This is truthy");
+// }
 
 
 
